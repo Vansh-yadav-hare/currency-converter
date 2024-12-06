@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pexels.jpeg'); /* Example currency background */
+    background-size:;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px; /* Fixed width for the converter box */
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #28a745; /* Green color for the title */
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%; /* Full width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #28a745; /* Green border on focus */
+    outline: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Lift button on hover */
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
